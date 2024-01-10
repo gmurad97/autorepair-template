@@ -23,6 +23,6 @@ class LanguageSwitcher extends CI_Controller
         } else {
             $this->session->set_userdata("site_lang", "en");
         }
-        redirect($_SERVER["HTTP_REFERER"]);
+        redirect(!empty($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : base_url("home"));
     }
 }

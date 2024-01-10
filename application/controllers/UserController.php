@@ -6,7 +6,6 @@ class UserController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->lang->load("message", "en");
     }
 
     public function index()
@@ -85,5 +84,11 @@ class UserController extends CI_Controller
     {
         $data["user_page_name"] = "Tire Repair";
         $this->load->view("users/TireRepair", $data);
+    }
+
+    public function error()
+    {
+        $data["user_page_name"] = "Page Not Found";
+        $this->load->view("users/Error", $data);
     }
 }
