@@ -43,7 +43,7 @@
                             <h3 class="item_title">Engine Repair</h3>
                             <p>Count on our expertise for meticulous engine repairs, ensuring optimal
                                 performance and reliability. Our skilled technicians prioritize your vehicle's
-                                longevity and your satisfaction.</p><a class="btn-link" href="engine-repair.html"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
+                                longevity and your satisfaction.</p><a class="btn-link" href="<?= base_url('engine-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
                                         Service</small></span></a>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                             <h3 class="item_title">Tire Repair</h3>
                             <p>Experience top-notch tire repair services with our skilled technicians. We
                                 prioritize safety and efficiency, ensuring your tires are road-ready for a
-                                smooth and secure journey.</p><a class="btn-link" href="tire-repair.html"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
+                                smooth and secure journey.</p><a class="btn-link" href="<?= base_url('tire-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
                                         Service</small></span></a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             <h3 class="item_title">Cooling System</h3>
                             <p>Safeguard your vehicle's performance with our expert cooling system services. Our
                                 skilled technicians ensure optimal functionality, preventing overheating and
-                                maintaining your engine's health for a reliable drive.</p><a class="btn-link" href="cooling-system.html"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
+                                maintaining your engine's health for a reliable drive.</p><a class="btn-link" href="<?= base_url('cooling-system'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
                                         Service</small></span></a>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                             <p>Count on our proficient technicians for top-notch battery repair services. We
                                 diagnose and address issues, ensuring your vehicle starts reliably. Trust us to
                                 keep your battery in excellent condition for a trouble-free driving experience.
-                            </p><a class="btn-link" href="battery-repair.html"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
+                            </p><a class="btn-link" href="<?= base_url('battery-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
                                         Service</small></span></a>
                         </div>
                     </div>
@@ -110,13 +110,13 @@
                             <p>Experience smooth and precise handling with our expert steering repair services.
                                 Our skilled technicians diagnose and fix steering issues, ensuring your vehicle
                                 responds seamlessly on the road. Trust us to keep your steering system in
-                                optimal condition for a safer drive.</p><a class="btn-link" href="steering-repair.html"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
+                                optimal condition for a safer drive.</p><a class="btn-link" href="<?= base_url('steering-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
                                         Service</small></span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="btn_wrap text-center d-lg-none d-block"><a class="btn btn-primary" href="service.html"><span class="btn_text">All Services</span></a></div>
+            <div class="btn_wrap text-center d-lg-none d-block"><a class="btn btn-primary" href="<?= base_url('service'); ?>"><span class="btn_text">All Services</span></a></div>
         </div>
     </section>
 
@@ -138,7 +138,7 @@
                                     Location</span></li>
                             <li><span class="info_icon"><img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square"> </span><span class="info_text">Complimentary Shuttle</span></li>
                         </ul>
-                    </div><a class="btn btn-primary" href="car_cleaning.html"><span class="btn_text">Get Service</span></a>
+                    </div><a class="btn btn-primary" href="<?= base_url('car-cleaning'); ?>"><span class="btn_text">Get Service</span></a>
                 </div>
             </div>
             <div class="service_split_item">
@@ -150,7 +150,7 @@
                         <p class="heading_description mb-0">Vehicle services include rubbing for imperfections,
                             waxing for protection, and polishing for an enhanced appearance. Our team ensures
                             top-notch maintenance for a protected and appealing vehicle.</p>
-                    </div><a class="btn btn-primary" href="exterior_revitalization.html"><span class="btn_text">Get Service</span></a>
+                    </div><a class="btn btn-primary" href="<?= base_url('exterior-revitalization'); ?>"><span class="btn_text">Get Service</span></a>
                 </div>
             </div>
         </div>

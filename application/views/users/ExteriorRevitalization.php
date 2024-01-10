@@ -4,9 +4,9 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="service_details.html">Exterior Revitalization</a></li>
+                <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                <li><a href="<?= base_url('services'); ?>">Services</a></li>
+                <li><a href="<?= base_url('exterior-revitalization'); ?>">Exterior Revitalization</a></li>
             </ul>
             <h1 class="page_title wow" data-splitting>Exterior Revitalization</h1>
         </div>

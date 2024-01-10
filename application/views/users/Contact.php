@@ -4,8 +4,8 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="<?= base_url('home'); ?>">Home</a></li>
+                <li><a href="<?= base_url('contact'); ?>">Contacts</a></li>
             </ul>
             <h1 class="page_title wow" data-splitting>Contacts</h1>
         </div>
