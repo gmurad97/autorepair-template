@@ -7,13 +7,9 @@
                 <div class="col-lg-6">
                     <div class="hero_section_content">
                         <h1 class="hero_title wow" data-splitting><?= $this->lang->line("hero_title"); ?></h1>
-                        <p>
-                            <?= $this->lang->line("header_description"); ?>
-                        </p>
+                        <p><?= $this->lang->line("header_description"); ?></p>
                         <a class="btn btn-primary" href="<?= base_url('about'); ?>">
-                            <span class="btn_text">
-                                <?= $this->lang->line("explore_now"); ?>
-                            </span>
+                            <span class="btn_text"><?= $this->lang->line("explore_now"); ?></span>
                         </a>
                     </div>
                 </div>
@@ -36,9 +32,7 @@
                             <span>+</span>
                         </div>
                         <hr>
-                        <p class="counter_description mb-0">
-                            <?= $this->lang->line("satisfied_client"); ?>
-                        </p>
+                        <p class="counter_description mb-0"><?= $this->lang->line("satisfied_client"); ?></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -47,9 +41,7 @@
                             <span>+</span>
                         </div>
                         <hr>
-                        <p class="counter_description mb-0">
-                            <?= $this->lang->line("completed_project"); ?>
-                        </p>
+                        <p class="counter_description mb-0"><?= $this->lang->line("completed_project"); ?></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -58,9 +50,7 @@
                             <span>+</span>
                         </div>
                         <hr>
-                        <p class="counter_description mb-0">
-                            <?= $this->lang->line("dedicated_team"); ?>
-                        </p>
+                        <p class="counter_description mb-0"><?= $this->lang->line("dedicated_team"); ?></p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -69,9 +59,7 @@
                             <span>%</span>
                         </div>
                         <hr>
-                        <p class="counter_description mb-0">
-                            <?= $this->lang->line("quality_service"); ?>
-                        </p>
+                        <p class="counter_description mb-0"><?= $this->lang->line("quality_service"); ?></p>
                     </div>
                 </div>
             </div>
@@ -104,9 +92,7 @@
                         </div>
                         <div class="item_content">
                             <h3 class="item_title"><?= $this->lang->line("break_repair_title"); ?></h3>
-                            <p>
-                                <?= $this->lang->line("break_repair_description"); ?>
-                            </p>
+                            <p><?= $this->lang->line("break_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('breake-repair'); ?>">
                                 <span class="btn_icon">
                                     <i class="fa-regular fa-angle-right"></i>
@@ -128,12 +114,11 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1333 18.1352C11.0407 18.1352 10.144 17.2606 10.1202 16.168V16.1212C10.1202 15.0056 11.0254 14.1081 12.1333 14.1081C13.2489 14.1081 14.155 15.0056 14.155 16.1212C14.155 16.4729 14.0604 16.8084 13.9046 17.0963C13.5538 17.7205 12.898 18.1352 12.1333 18.1352ZM0 12.439V23.799H6.04707L6.98381 20.2956C6.98381 19.8596 7.28782 19.5079 7.68551 19.5079H16.4721C16.8621 19.5079 17.1747 19.8596 17.1747 20.2956L18.2272 23.799H24.1346V12.439H0Z" fill="#EDEDED" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75729 49.5814C3.85425 49.5814 1.49027 47.225 1.49027 44.3143C1.49027 41.4036 3.85425 39.0465 6.75729 39.0465C9.66799 39.0465 12.0243 41.4036 12.0243 44.3143C12.0243 47.225 9.66799 49.5814 6.75729 49.5814ZM0 51.2351H13.5222V37.7129H0V51.2351Z" fill="#EDEDED" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74684 47.6261C5.13991 47.6261 3.79015 46.4637 3.50062 44.9342H2.07422C2.37057 47.2437 4.3522 49.0312 6.74684 49.0312C9.14319 49.0312 11.1257 47.2437 11.422 44.9342H9.99306C9.70523 46.4637 8.35547 47.6261 6.74684 47.6261ZM6.74684 41.0016C8.35547 41.0016 9.70523 42.1564 9.99306 43.6867H11.422C11.1257 41.3763 9.14319 39.5889 6.74684 39.5889C4.3522 39.5889 2.37057 41.3763 2.07422 43.6867H3.50062C3.79015 42.1564 5.13991 41.0016 6.74684 41.0016Z" fill="#EDEDED" />
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div class="item_content">
                             <h3 class="item_title"><?= $this->lang->line("engine_repair_title"); ?></h3>
-                            <p>
-                                <?= $this->lang->line("engine_repair_description"); ?>
-                            </p>
+                            <p><?= $this->lang->line("engine_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('engine-repair'); ?>">
                                 <span class="btn_icon">
                                     <i class="fa-regular fa-angle-right"></i>
@@ -156,9 +141,7 @@
                         </div>
                         <div class="item_content">
                             <h3 class="item_title"><?= $this->lang->line("tire_repair_title"); ?></h3>
-                            <p>
-                                <?= $this->lang->line("tire_repair_description"); ?>
-                            </p>
+                            <p><?= $this->lang->line("tire_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('tire-repair'); ?>">
                                 <span class="btn_icon">
                                     <i class="fa-regular fa-angle-right"></i>
@@ -183,9 +166,7 @@
                         </div>
                         <div class="item_content">
                             <h3 class="item_title"><?= $this->lang->line("cooling_system_title"); ?></h3>
-                            <p>
-                                <?= $this->lang->line("cooling_system_description"); ?>
-                            </p>
+                            <p><?= $this->lang->line("cooling_system_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('cooling-system'); ?>">
                                 <span class="btn_icon"><i class="fa-regular fa-angle-right"></i>
                                 </span>
@@ -209,9 +190,7 @@
                         </div>
                         <div class="item_content">
                             <h3 class="item_title"><?= $this->lang->line("battery_repair_title"); ?></h3>
-                            <p>
-                                <?= $this->lang->line("battery_repair_description"); ?>
-                            </p>
+                            <p><?= $this->lang->line("battery_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('battery-repair'); ?>">
                                 <span class="btn_icon">
                                     <i class="fa-regular fa-angle-right"></i>
@@ -234,13 +213,8 @@
                             </svg>
                         </div>
                         <div class="item_content">
-                            <h3 class="item_title"><?= $this->lang->line("details_service"); ?>Steering Repair</h3>
-                            <p>
-                                Experience smooth and precise handling with our expert steering repair services.
-                                Our skilled technicians diagnose and fix steering issues, ensuring your vehicle
-                                responds seamlessly on the road. Trust us to keep your steering system in
-                                optimal condition for a safer drive.
-                            </p>
+                            <h3 class="item_title"><?= $this->lang->line("steering_repair_title"); ?>Steering Repair</h3>
+                            <p><?= $this->lang->line("steering_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('steering-repair'); ?>">
                                 <span class="btn_icon">
                                     <i class="fa-regular fa-angle-right"></i>
@@ -256,7 +230,7 @@
             </div>
             <div class="btn_wrap text-center d-lg-none d-block">
                 <a class="btn btn-primary" href="<?= base_url('service'); ?>">
-                    <span class="btn_text">All Services</span>
+                    <span class="btn_text"><?= $this->lang->line('all_services'); ?></span>
                 </a>
             </div>
         </div>
@@ -264,7 +238,7 @@
     <section class="video_section">
         <div class="container">
             <div class="section_heading mb-0">
-                <h2 class="heading_text mb-0 wow" data-splitting>Maintenance & Repairs</h2>
+                <h2 class="heading_text mb-0 wow" data-splitting><?= $this->lang->line('maintenance_and_repair'); ?></h2>
             </div>
             <hr>
             <div class="video_wrap parallaxie text-center" style="background-image: url('<?= base_url("public/user/assets/images/video/video_poster_1.jpg"); ?>');">
@@ -282,46 +256,37 @@
                 </div>
                 <div class="item_content">
                     <div class="section_heading">
-                        <div class="outline_text">Service</div>
-                        <h3 class="heading_text wow" data-splitting>Car Exterior Cleaning: Basic Detailing</h3>
+                        <div class="outline_text"><?= $this->lang->line('service'); ?></div>
+                        <h3 class="heading_text wow" data-splitting><?= $this->lang->line('car_exterior_cleaning'); ?></h3>
                         <ul class="info_list unordered_list_block text-uppercase">
                             <li>
                                 <span class="info_icon">
                                     <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                 </span>
-                                <span class="info_text">
-                                    Same Day
-                                    Service
-                                </span>
+                                <span class="info_text"><?= $this->lang->line('same_day_service'); ?></span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                 </span>
-                                <span class="info_text">
-                                    Quick
-                                    Appointment
-                                </span>
+                                <span class="info_text"><?= $this->lang->line('quick_appointment'); ?></span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                 </span>
-                                <span class="info_text">
-                                    Convenient
-                                    Location
-                                </span>
+                                <span class="info_text"><?= $this->lang->line('convenient_location'); ?></span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                 </span>
-                                <span class="info_text">Complimentary Shuttle</span>
+                                <span class="info_text"><?= $this->lang->line('complimentary_shuttle'); ?></span>
                             </li>
                         </ul>
                     </div>
                     <a class="btn btn-primary" href="<?= base_url('car_cleaning'); ?>">
-                        <span class="btn_text">Get Service</span>
+                        <span class="btn_text"><?= $this->lang->line('get_service'); ?></span>
                     </a>
                 </div>
             </div>
@@ -331,16 +296,12 @@
                 </div>
                 <div class="item_content">
                     <div class="section_heading">
-                        <div class="outline_text">Service</div>
-                        <h3 class="heading_text wow" data-splitting>Rubbing, Waxing, and Polishing</h3>
-                        <p class="heading_description mb-0">
-                            Vehicle services include rubbing for imperfections,
-                            waxing for protection, and polishing for an enhanced appearance. Our team ensures
-                            top-notch maintenance for a protected and appealing vehicle.
-                        </p>
+                        <div class="outline_text"><?= $this->lang->line("service"); ?></div>
+                        <h3 class="heading_text wow" data-splitting><?= $this->lang->line("service_rubbing_title"); ?></h3>
+                        <p class="heading_description mb-0"><?= $this->lang->line("service_rubbing_description"); ?></p>
                     </div>
                     <a class="btn btn-primary" href="<?= base_url('exterior_revitalization'); ?>">
-                        <span class="btn_text">Get Service</span>
+                        <span class="btn_text"><?= $this->lang->line('get_service'); ?></span>
                     </a>
                 </div>
             </div>
@@ -351,12 +312,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="section_heading pe-lg-5">
-                        <h2 class="heading_text wow" data-splitting>How to Service Your Car</h2>
-                        <p class="heading_description mb-0">
-                            Experience expert car service with us. Our skilled
-                            technicians prioritize your car's health and performance. Trust us for quality
-                            automotive care.
-                        </p>
+                        <h2 class="heading_text wow" data-splitting><?= $this->lang->line('service_your_car_title'); ?></h2>
+                        <p class="heading_description mb-0"><?= $this->lang->line('service_your_car_description'); ?></p>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -365,52 +322,36 @@
                             <div class="workprocess_item">
                                 <h3 class="item_title">
                                     <span class="serial_number">01</span>
-                                    <span class="title_text">Schedule an Appointment</span>
+                                    <span class="title_text"><?= $this->lang->line('schedule_appointment_title'); ?></span>
                                 </h3>
-                                <p class="mb-0">
-                                    Schedule your appointment with us, and our team will ensure your
-                                    car receives top-notch service. We value your time and provide efficient
-                                    solutions.
-                                </p>
+                                <p class="mb-0"><?= $this->lang->line('schedule_appointment_description'); ?></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="workprocess_item">
                                 <h3 class="item_title">
                                     <span class="serial_number">02</span>
-                                    <span class="title_text">Select Your Service</span>
+                                    <span class="title_text"><?= $this->lang->line('select_your_service_title'); ?></span>
                                 </h3>
-                                <p class="mb-0">
-                                    Choose from a range of services that suit your car's needs. Our
-                                    experts offer comprehensive solutions, ensuring your vehicle performs at its
-                                    best.
-                                </p>
+                                <p class="mb-0"><?= $this->lang->line('select_your_service_description'); ?></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="workprocess_item">
                                 <h3 class="item_title">
                                     <span class="serial_number">03</span>
-                                    <span class="title_text">Confirm Your Request</span>
+                                    <span class="title_text"><?= $this->lang->line('confirm_your_request_title'); ?></span>
                                 </h3>
-                                <p class="mb-0">
-                                    Confirm your service request, and we'll handle the rest. Our
-                                    team is dedicated to providing a seamless experience, from confirmation to
-                                    completion.
-                                </p>
+                                <p class="mb-0"><?= $this->lang->line('confirm_your_request_description'); ?></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="workprocess_item">
                                 <h3 class="item_title">
                                     <span class="serial_number">04</span>
-                                    <span class="title_text">Retrieve Your Car</span>
+                                    <span class="title_text"><?= $this->lang->line('retrieve_your_car_title'); ?></span>
                                 </h3>
-                                <p class="mb-0">
-                                    Retrieve your car in top-notch condition. Our experts ensure
-                                    thorough service, and your vehicle is ready for the road, enhancing your
-                                    driving experience.
-                                </p>
+                                <p class="mb-0"><?= $this->lang->line('retrieve_your_car_description'); ?></p>
                             </div>
                         </div>
                     </div>

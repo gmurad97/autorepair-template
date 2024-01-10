@@ -4,11 +4,17 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="<?= base_url('home'); ?>">Home</a></li>
-                <li><a href="<?= base_url('services'); ?>">Services</a></li>
-                <li><a href="<?= base_url('car-cleaning'); ?>">Car Exterior Cleaning</a></li>
+                <li>
+                    <a href="<?= base_url('home'); ?>"><?= $this->lang->line("breadcrumb_home"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('services'); ?>"><?= $this->lang->line("breadcrumb_services"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('car-cleaning'); ?>"><?= $this->lang->line("breadcrumb_car_exterior_cleaning"); ?></a>
+                </li>
             </ul>
-            <h1 class="page_title wow" data-splitting>Car Exterior Cleaning</h1>
+            <h1 class="page_title wow" data-splitting><?= $this->lang->line('motorclub_car_exterior_cleaning'); ?></h1>
         </div>
     </section>
     <section class="details_section section_space_lg pb-0">
@@ -17,50 +23,33 @@
                 <div style="height: 250px; overflow: hidden; background: url('<?= base_url("public/user/assets/images/image7.jpg"); ?>') center center / cover no-repeat;" class="details_image"></div>
                 <div class="col-lg-8">
                     <div class="details_content">
-                        <h2 class="details_item_title wow" data-splitting>Your Car Exterior Cleaning and Basic
-                            Detailing Experts</h2>
-                        <p>At <strong>The Motorclub</strong>, we know that a well-maintained exterior not only
-                            enhances the aesthetic appeal of your car but also protects it from the elements.
-                            Our dedicated team of detailing specialists provides comprehensive car exterior
-                            cleaning and basic detailing services to keep your vehicle looking its best.</p>
-                        <p><strong>Why choose The Motorclub for Car Exterior Cleaning?</strong></p>
+                        <h2 class="details_item_title wow" data-splitting><?= $this->lang->line('motorclub_car_exterior_cleaning_experts'); ?></h2>
+                        <p><?= $this->lang->line('motorclub_car_exterior_cleaning_description'); ?></p>
+                        <p><strong><?= $this->lang->line('motorclub_why_choose_us_car_exterior_cleaning'); ?></strong></p>
                         <ul>
-                            <li><strong>Detailing Specialists:</strong> Our team consists of skilled detailing
-                                professionals with an eye for precision.</li>
-                            <li><strong>Quality Cleaning Products:</strong> We use high-quality cleaning
-                                products to safely and effectively clean your car's exterior surfaces.</li>
-                            <li><strong>Thorough Cleaning:</strong> From washing and waxing to tire cleaning, we
-                                cover every aspect of your car's exterior.</li>
-                            <li><strong>Paint Protection:</strong> Our detailing services include measures to
-                                protect your car's paint from environmental elements.</li>
-                            <li><strong>Efficient Services:</strong> We prioritize quick and efficient exterior
-                                cleaning to get your car back on the road with a fresh look.</li>
-                            <li><strong>Affordable Packages:</strong> Our car exterior cleaning and basic
-                                detailing packages are competitively priced, offering great value.</li>
+                            <li><?= $this->lang->line('motorclub_detailing_specialists_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_quality_cleaning_products_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_thorough_cleaning_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_paint_protection_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_efficient_services_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_affordable_packages_car_exterior_cleaning'); ?></li>
                         </ul>
-                        <p><strong>Services Included in Car Exterior Cleaning: Basic Detailing:</strong></p>
+                        <p><strong><?= $this->lang->line('motorclub_services_included_car_exterior_cleaning_basic_detailing'); ?></strong></p>
                         <ul>
-                            <li>Exterior washing and drying</li>
-                            <li>Wheel and tire cleaning</li>
-                            <li>Light bug and tar removal</li>
-                            <li>Hand waxing for added protection</li>
-                            <li>Exterior glass cleaning</li>
+                            <li><?= $this->lang->line('motorclub_exterior_washing_drying_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_wheel_tire_cleaning_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_bug_tar_removal_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_hand_waxing_protection_car_exterior_cleaning'); ?></li>
+                            <li><?= $this->lang->line('motorclub_exterior_glass_cleaning_car_exterior_cleaning'); ?></li>
                         </ul>
-                        <p><strong>Schedule Your Car Exterior Cleaning Today:</strong></p>
-                        <p>Give your car the care it deserves. Schedule an appointment with <strong>The
-                                Motorclub</strong> for expert, reliable, and affordable car exterior cleaning
-                            and basic detailing services.</p>
-                        <p>Trust <strong>The Motorclub</strong> for all your car detailing needs. Your
-                            satisfaction is our priority.</p>
+                        <p><strong><?= $this->lang->line('motorclub_schedule_car_exterior_cleaning'); ?></strong></p>
+                        <p><?= $this->lang->line('motorclub_schedule_car_exterior_cleaning_care'); ?></p>
+                        <p><?= $this->lang->line('motorclub_trust_us_car_detailing'); ?></p>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 <?php $this->load->view("users/includes/Footer"); ?>
 <?php $this->load->view("users/includes/FooterScripts"); ?>

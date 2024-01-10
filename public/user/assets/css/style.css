@@ -6749,3 +6749,9 @@ Responsive For Mobile & Tablet Devices
   background-color: #D16527;
   padding: 20px !important;
 }
+
+.custom-font {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}

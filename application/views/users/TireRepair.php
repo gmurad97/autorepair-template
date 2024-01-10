@@ -4,11 +4,17 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="<?= base_url("home"); ?>">Home</a></li>
-                <li><a href="<?= base_url("services"); ?>">Services</a></li>
-                <li><a href="<?= base_url("tire-repair"); ?>">Tire Repair</a></li>
+                <li>
+                    <a href="<?= base_url("home"); ?>"><?= $this->lang->line('breadcrumb_home'); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url("services"); ?>"><?= $this->lang->line('breadcrumb_services'); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url("tire-repair"); ?>"><?= $this->lang->line('breadcrumb_tire_repair'); ?></a>
+                </li>
             </ul>
-            <h1 class="page_title wow" data-splitting>Tire Repair</h1>
+            <h1 class="page_title wow" data-splitting><?= $this->lang->line('breadcrumb_tire_repair'); ?></h1>
         </div>
     </section>
     <section class="details_section section_space_lg pb-0">
@@ -17,47 +23,33 @@
                 <div style="height: 250px; overflow: hidden; background: url('<?= base_url("public/user/assets/images/image3.avif"); ?>') center center / cover no-repeat;" class="details_image"></div>
                 <div class="col-lg-8">
                     <div class="details_content">
-                        <h2 class="details_item_title wow" data-splitting>Tire Repair at the Motorclub</h2>
-                        <p>At <strong>The Motorclub</strong>, we recognize the importance of well-maintained
-                            tires for a safe and comfortable ride. Our team of dedicated experts specializes in
-                            comprehensive tire repair services to keep you rolling smoothly.</p>
-                        <p><strong>Why choose The Motorclub for Tire Repair?</strong></p>
+                        <h2 class="details_item_title wow" data-splitting><?= $this->lang->line('tire_repair_motorclub'); ?></h2>
+                        <p><?= $this->lang->line('importance_of_tires'); ?></p>
+                        <p><strong><?= $this->lang->line('why_choose_motorclub'); ?></strong></p>
                         <ul>
-                            <li><strong>Expert Technicians:</strong> Our skilled technicians have the expertise
-                                to handle various tire issues.</li>
-                            <li><strong>Thorough Inspections:</strong> We conduct comprehensive inspections to
-                                identify tire damage or wear.</li>
-                            <li><strong>Quality Tire Services:</strong> From patching punctures to tire
-                                rotations, we offer a range of high-quality tire services.</li>
-                            <li><strong>Efficient Repairs:</strong> We aim for prompt and efficient tire repairs
-                                to get you back on the road quickly.</li>
-                            <li><strong>Transparent Communication:</strong> Before any tire repairs, we
-                                communicate clearly about the issues and proposed solutions.</li>
-                            <li><strong>Affordable Pricing:</strong> Our tire repair services are competitively
-                                priced, providing excellent value for your investment.</li>
+                            <li><?= $this->lang->line('expert_technicians'); ?></li>
+                            <li><?= $this->lang->line('thorough_inspections'); ?></li>
+                            <li><?= $this->lang->line('quality_tire_services'); ?></li>
+                            <li><?= $this->lang->line('efficient_repairs'); ?></li>
+                            <li><?= $this->lang->line('transparent_communication'); ?></li>
+                            <li><?= $this->lang->line('affordable_pricing'); ?></li>
                         </ul>
-                        <p><strong>Common Signs You May Need Tire Repair:</strong></p>
+                        <p><strong><?= $this->lang->line('common_signs_for_tire_repair'); ?></strong></p>
                         <ul>
-                            <li>Flat or underinflated tires</li>
-                            <li>Tire vibrations or wobbling</li>
-                            <li>Uneven tire wear</li>
-                            <li>Punctures or visible damage</li>
-                            <li>Warning lights for tire pressure</li>
+                            <li><?= $this->lang->line('flat_underinflated_tires'); ?></li>
+                            <li><?= $this->lang->line('tire_vibrations_wobbling'); ?></li>
+                            <li><?= $this->lang->line('uneven_tire_wear'); ?></li>
+                            <li><?= $this->lang->line('punctures_visible_damage'); ?></li>
+                            <li><?= $this->lang->line('warning_lights_tire_pressure'); ?></li>
                         </ul>
-                        <p><strong>Schedule Your Tire Repair Today:</strong></p>
-                        <p>Your safety on the road starts with well-maintained tires. Schedule an appointment
-                            with <strong>The Motorclub</strong> for expert, reliable, and affordable tire repair
-                            services.</p>
-                        <p>Trust <strong>The Motorclub</strong> for all your tire repair needs. Your journey is
-                            our priority.</p>
+                        <p><strong><?= $this->lang->line('schedule_tire_repair_today'); ?></strong></p>
+                        <p><?= $this->lang->line('safety_on_the_road'); ?></p>
+                        <p><?= $this->lang->line('trust_the_motorclub_tire_repair'); ?></p>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 <?php $this->load->view("users/includes/Footer"); ?>
 <?php $this->load->view("users/includes/FooterScripts"); ?>

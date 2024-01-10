@@ -6,9 +6,9 @@
             <div class="section_heading">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h2 class="heading_text mb-0 wow" data-splitting>Our Services</h2>
+                        <h2 class="heading_text mb-0 wow" data-splitting><?= $this->lang->line("our_services"); ?></h2>
                     </div>
-                    <div class="col-lg-6 d-none d-lg-flex justify-content-end"><a class="btn btn-primary" href="<?= base_url('services'); ?>"><span class="btn_text">All Services</span></a></div>
+                    <div class="col-lg-6 d-none d-lg-flex justify-content-end"><a class="btn btn-primary" href="<?= base_url('services'); ?>"><span class="btn_text"><?= $this->lang->line("all_services"); ?></span></a></div>
                 </div>
             </div>
             <div class="row">
@@ -21,11 +21,17 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M45 8.1179L42.7813 11.7545L40.8159 12.6281L23.1857 31L21 28.7233L38.6378 10.3514L39.4765 8.31292L42.9677 6L43.1532 6.19502L40.5787 8.43646C40.1288 8.90417 40.3322 9.91017 40.782 10.3867C41.2471 10.8632 42.2383 11.1447 42.6966 10.6691L44.806 7.91581L45 8.1179Z" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Brake Repair</h3>
-                            <p>Trust us for skilled brake repairs, prioritizing your safety. Ensure a reliable
-                                driving experience with our expert maintenance for you and your passengers.</p>
-                            <a class="btn-link" href="<?= base_url('brake-repair') ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('brake_repair'); ?></h3>
+                            <p><?= $this->lang->line('trust_us_brake_repairs'); ?></p>
+                            <a class="btn-link" href="<?= base_url('brake-repair') ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -40,11 +46,17 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74684 47.6261C5.13991 47.6261 3.79015 46.4637 3.50062 44.9342H2.07422C2.37057 47.2437 4.3522 49.0312 6.74684 49.0312C9.14319 49.0312 11.1257 47.2437 11.422 44.9342H9.99306C9.70523 46.4637 8.35547 47.6261 6.74684 47.6261ZM6.74684 41.0016C8.35547 41.0016 9.70523 42.1564 9.99306 43.6867H11.422C11.1257 41.3763 9.14319 39.5889 6.74684 39.5889C4.3522 39.5889 2.37057 41.3763 2.07422 43.6867H3.50062C3.79015 42.1564 5.13991 41.0016 6.74684 41.0016Z" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Engine Repair</h3>
-                            <p>Count on our expertise for meticulous engine repairs, ensuring optimal
-                                performance and reliability. Our skilled technicians prioritize your vehicle's
-                                longevity and your satisfaction.</p><a class="btn-link" href="<?= base_url('engine-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('engine_repair'); ?></h3>
+                            <p><?= $this->lang->line('count_on_expertise_engine_repairs'); ?></p>
+                            <a class="btn-link" href="<?= base_url('engine-repair'); ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -55,11 +67,17 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.4353 37.3763L30.8441 26.5527L42.4937 21.8852C42.6555 22.8134 42.7151 23.768 42.7066 24.7048C42.6981 29.5077 40.8246 34.004 37.4353 37.3763ZM35.8599 38.8155C35.4426 39.122 35.0509 39.4371 34.574 39.7437C34.5655 39.7437 34.5569 39.7607 34.5484 39.7778L27.7358 30.3508C28.2382 30.0783 28.6981 29.7376 29.1068 29.3459L35.8854 38.7806C35.8769 38.7984 35.8769 38.7984 35.8599 38.8155ZM24.5764 42.7242C21.6811 42.7072 18.9134 42.0259 16.4183 40.723L24.5509 31.1342L32.709 40.7997C30.2054 42.0855 27.4471 42.7242 24.5764 42.7242ZM14.5874 39.65L14.5363 39.5989C14.102 39.3349 13.6847 39.0198 13.3441 38.7312L13.2674 38.6707L20.1141 29.2948C20.5144 29.6942 20.9742 30.0357 21.4682 30.2997L14.5874 39.65ZM11.7099 37.2486C8.37086 33.8346 6.53144 29.3459 6.54847 24.56C6.55699 23.6318 6.65066 22.7121 6.79543 21.7668L6.91465 21.8086L18.428 26.5357L11.7099 37.2486ZM7.2638 19.6549C7.39154 19.1695 7.56185 18.6841 7.74069 18.2072C7.7492 18.1979 7.75772 18.1561 7.77475 18.1391L18.8197 21.7839C18.5643 22.2778 18.3854 22.8134 18.2662 23.3678L7.23911 19.723C7.24677 19.706 7.25614 19.6796 7.2638 19.6549ZM21.7918 6.78754L20.8814 19.3398V19.3483H20.8721L8.65188 16.2316C11.3173 11.1902 16.1884 7.67318 21.7918 6.78754ZM20.31 24.1002C19.7905 24.1002 19.3648 23.6829 19.3648 23.1626C19.3648 22.6354 19.7905 22.2182 20.31 22.2182C20.8295 22.2182 21.2553 22.6354 21.2553 23.1626C21.2553 23.6829 20.8295 24.1002 20.31 24.1002ZM21.9459 27.3277C22.4645 27.3277 22.8903 27.7449 22.8903 28.2721C22.8903 28.7924 22.4645 29.2096 21.9459 29.2096C21.4256 29.2096 20.9998 28.7924 20.9998 28.2721C20.9998 27.7449 21.4256 27.3277 21.9459 27.3277ZM24.636 22.0215C26.0837 22.0215 27.2589 23.1975 27.2589 24.6452C27.2589 26.0843 26.0837 27.2595 24.636 27.2595C23.1969 27.2595 22.0217 26.0843 22.0217 24.6452C22.0217 23.1975 23.1969 22.0215 24.636 22.0215ZM24.636 19.0247C25.164 19.0247 25.5813 19.442 25.5813 19.9691C25.5813 20.4895 25.164 20.9067 24.636 20.9067C24.1166 20.9067 23.6908 20.4895 23.6908 19.9691C23.6908 19.442 24.1166 19.0247 24.636 19.0247ZM23.8449 6.59168C23.9122 6.57464 23.9803 6.56613 24.0399 6.56613C24.2188 6.55676 24.3891 6.55676 24.5764 6.55676H24.8319C25.0022 6.55676 25.1981 6.55676 25.5047 6.59168H25.5387L25.4961 18.2072C25.2151 18.1647 24.9256 18.1476 24.636 18.1476C24.3465 18.1476 24.0655 18.1647 23.7845 18.2072L23.8449 6.59168ZM28.2893 28.2721C28.2893 28.7924 27.872 29.2096 27.3441 29.2096C26.8255 29.2096 26.3997 28.7924 26.3997 28.2721C26.3997 27.7449 26.8255 27.3277 27.3441 27.3277C27.872 27.3277 28.2893 27.7449 28.2893 28.2721ZM29.9414 23.1626C29.9414 23.6829 29.5156 24.1002 28.9961 24.1002C28.4767 24.1002 28.0509 23.6829 28.0509 23.1626C28.0509 22.6354 28.4767 22.2182 28.9961 22.2182C29.5156 22.2182 29.9414 22.6354 29.9414 23.1626ZM40.7054 16.3423L28.4426 19.3739L27.6081 6.8216C33.2123 7.73279 38.0569 11.2924 40.7054 16.3423ZM41.591 18.3946C41.7869 18.8629 41.941 19.3824 42.0594 19.8244C42.0594 19.8423 42.0594 19.8423 42.0679 19.8593L31.0059 23.4027C30.9037 22.8483 30.7248 22.3204 30.4864 21.8264L41.5484 18.266C41.5655 18.3179 41.5655 18.3426 41.591 18.3946ZM44.0776 21.3913C43.9925 20.7109 43.8221 20.0126 43.6178 19.3483C43.4815 18.8119 43.3367 18.2754 43.1068 17.7636C42.8769 17.1087 42.5873 16.47 42.2808 15.8475C39.4706 10.2364 34.0545 6.12331 27.6251 5.14314C26.9353 5.05032 26.237 4.97367 25.5557 4.95664C25.2747 4.92173 25.0107 4.91406 24.7297 4.91406C24.4231 4.92173 24.1336 4.91406 23.8526 4.95664C23.1628 4.96516 22.4645 5.02477 21.8003 5.12696C15.3623 6.05433 9.9037 10.1172 7.08497 15.7206C6.72731 16.3423 6.4548 16.9724 6.20784 17.6367C6.02901 18.1476 5.83315 18.6841 5.67986 19.2121C5.484 19.8678 5.34008 20.5491 5.22852 21.2465C5.02415 22.3382 4.92196 23.4274 4.91429 24.56C4.88789 30.0433 7.14458 35.0081 10.7468 38.5941L10.8149 38.6622L12.237 39.9651L12.2966 39.9907C12.7139 40.3483 13.1738 40.6719 13.6166 40.9615L15.439 42.06C18.1555 43.5162 21.2467 44.3507 24.5679 44.3593C27.8465 44.3678 30.9462 43.5758 33.6713 42.1451C34.3015 41.8471 34.9155 41.4809 35.4852 41.0892C35.9621 40.7826 36.4134 40.4505 36.8485 40.1175L38.3976 38.7312C42.0423 35.1877 44.3331 30.2154 44.3586 24.7133C44.3501 23.5884 44.265 22.4736 44.0776 21.3913Z" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Tire Repair</h3>
-                            <p>Experience top-notch tire repair services with our skilled technicians. We
-                                prioritize safety and efficiency, ensuring your tires are road-ready for a
-                                smooth and secure journey.</p><a class="btn-link" href="<?= base_url('tire-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('tire_repair'); ?></h3>
+                            <p><?= $this->lang->line('top_notch_tire_repair_services'); ?></p>
+                            <a class="btn-link" href="<?= base_url('tire-repair'); ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,11 +90,17 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0482 43.3239C16.7586 43.7157 16.1881 43.3665 15.8474 43.1792C15.4387 42.9578 14.6467 42.3105 14.7148 41.7485C14.834 40.9565 15.626 41.493 16.0774 41.8669C16.6735 42.4127 17.1759 43.1621 17.0482 43.3239ZM21.4168 38.1625L21.3486 38.0612L17.8912 31.8872L14.2294 38.3933C13.8888 38.9894 13.71 39.6792 13.71 40.4115C13.71 42.7185 15.5834 44.5758 17.8912 44.5758C20.199 44.5758 22.064 42.7185 22.064 40.4115C22.064 39.5846 21.8255 38.8097 21.4168 38.1625Z" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Cooling System</h3>
-                            <p>Safeguard your vehicle's performance with our expert cooling system services. Our
-                                skilled technicians ensure optimal functionality, preventing overheating and
-                                maintaining your engine's health for a reliable drive.</p><a class="btn-link" href="<?= base_url('cooling-system'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('cooling_system'); ?></h3>
+                            <p><?= $this->lang->line('safeguard_vehicle_performance_cooling_system'); ?></p>
+                            <a class="btn-link" href="<?= base_url('cooling-system'); ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -89,12 +113,17 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M41.796 2.55474V5.46714H36.6865V2.55474C36.6865 1.14112 37.8276 0 39.2413 0C39.9481 0 40.5868 0.281021 41.0466 0.749391C41.515 1.20924 41.796 1.84793 41.796 2.55474" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Battery Repair</h3>
-                            <p>Count on our proficient technicians for top-notch battery repair services. We
-                                diagnose and address issues, ensuring your vehicle starts reliably. Trust us to
-                                keep your battery in excellent condition for a trouble-free driving experience.
-                            </p><a class="btn-link" href="<?= base_url('battery-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('battery_repair'); ?></h3>
+                            <p><?= $this->lang->line('count_on_proficient_technicians_battery_repair'); ?></p>
+                            <a class="btn-link" href="<?= base_url('battery-repair'); ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -106,17 +135,26 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.95266 2.83747L6.24379 3.79123V1.87944L8.95266 0.926519V2.83747ZM8.95266 5.31727L6.24379 6.27189V4.36435L8.95266 3.41058V5.31727ZM8.95266 7.80303L6.24379 8.7568V6.84841L8.95266 5.89123V7.80303ZM8.95266 10.2828L6.24379 11.2375V9.32906L8.95266 8.37614V10.2828ZM8.95266 12.7677L6.24379 13.7224V11.814L8.95266 10.8594V12.7677ZM8.95266 15.2492L6.24379 16.2064V14.2946L8.95266 13.3409V15.2492ZM8.95266 17.7333L6.24379 18.6871V16.7795L8.95266 15.8249V17.7333ZM8.95266 19.6689H6.24379V19.2636L8.95266 18.3056V19.6689ZM5.08053 19.6689H5.7107V0.388321H5.08053V19.6689ZM4.01094 19.6689H4.636V0.388321H4.01094V19.6689ZM0.764719 19.6689V18.3056L3.47445 19.2636V19.6689H0.764719ZM0.764719 15.8249L3.47445 16.7795V18.6871L0.764719 17.7333V15.8249ZM0.764719 13.3409L3.47445 14.2946V16.2064L0.764719 15.2492V13.3409ZM0.764719 10.8594L3.47445 11.814V13.7224L0.764719 12.7677V10.8594ZM0.764719 8.37614L3.47445 9.32906V11.2375L0.764719 10.2828V8.37614ZM0.764719 5.89123L3.47445 6.84841V8.7568L0.764719 7.80303V5.89123ZM0.764719 3.41058L3.47445 4.36435V6.27189L0.764719 5.31727V3.41058ZM0.764719 0.926519L3.47445 1.87944V3.79123L0.764719 2.83747V0.926519ZM0.764719 0.353406L0.869463 0.388321H3.47445V1.30632L0.869463 0.388321H0.764719V0.353406ZM6.24379 0.388321H8.84792L8.93989 0.356812V0.388321H8.84792L6.24379 1.30632V0.388321ZM9.19196 0.0212895C9.14086 0.00766422 9.08806 0 9.03697 0H8.93989V0.01618C8.89646 0.00766422 8.84792 0 8.79682 0H0.712773C0.320194 0 0 0.321046 0 0.717031V19.4203C0 19.8171 0.320194 20.1339 0.712773 20.1339H9.03697C9.08806 20.1339 9.14086 20.1297 9.19196 20.1177C9.50874 20.0453 9.74974 19.7643 9.74974 19.4203V0.717031C9.74974 0.372992 9.50874 0.0885643 9.19196 0.0212895Z" fill="#EDEDED" />
                             </svg></div>
                         <div class="item_content">
-                            <h3 class="item_title">Steering Repair</h3>
-                            <p>Experience smooth and precise handling with our expert steering repair services.
-                                Our skilled technicians diagnose and fix steering issues, ensuring your vehicle
-                                responds seamlessly on the road. Trust us to keep your steering system in
-                                optimal condition for a safer drive.</p><a class="btn-link" href="<?= base_url('steering-repair'); ?>"><span class="btn_icon"><i class="fa-regular fa-angle-right"></i></span> <span class="btn_text"><small>Details Service</small> <small>Details
-                                        Service</small></span></a>
+                            <h3 class="item_title"><?= $this->lang->line('steering_repair'); ?></h3>
+                            <p><?= $this->lang->line('smooth_precise_handling_steering_repair'); ?></p>
+                            <a class="btn-link" href="<?= base_url('steering-repair'); ?>">
+                                <span class="btn_icon">
+                                    <i class="fa-regular fa-angle-right"></i>
+                                </span>
+                                <span class="btn_text">
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                    <small><?= $this->lang->line('details_service'); ?></small>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="btn_wrap text-center d-lg-none d-block"><a class="btn btn-primary" href="<?= base_url('service'); ?>"><span class="btn_text">All Services</span></a></div>
+            <div class="btn_wrap text-center d-lg-none d-block">
+                <a class="btn btn-primary" href="<?= base_url('service'); ?>">
+                    <span class="btn_text"><?= $this->lang->line('all_services'); ?></span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -124,21 +162,43 @@
     <section class="service_section bg_gray_dark">
         <div class="service_split_wrapper">
             <div class="service_split_item">
-                <div class="item_image"><img src="<?= base_url("public/user/assets/images/services/service_img_1.jpg"); ?>" alt="ProMotors - Service Image"></div>
+                <div class="item_image">
+                    <img src="<?= base_url("public/user/assets/images/services/service_img_1.jpg"); ?>" alt="ProMotors - Service Image">
+                </div>
                 <div class="item_content">
                     <div class="section_heading">
-                        <div class="outline_text">Service</div>
-                        <h3 class="heading_text wow" data-splitting>Car Exterior Cleaning: Basic Detailing</h3>
+                        <div class="outline_text"><?= $this->lang->line('service'); ?></div>
+                        <h3 class="heading_text wow" data-splitting><?= $this->lang->line('car_exterior_cleaning_basic_detailing'); ?></h3>
                         <ul class="info_list unordered_list_block text-uppercase">
-                            <li><span class="info_icon"><img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square"> </span><span class="info_text">Same Day
-                                    Service</span></li>
-                            <li><span class="info_icon"><img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square"> </span><span class="info_text">Quick
-                                    Appointment</span></li>
-                            <li><span class="info_icon"><img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square"> </span><span class="info_text">Convenient
-                                    Location</span></li>
-                            <li><span class="info_icon"><img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square"> </span><span class="info_text">Complimentary Shuttle</span></li>
+                            <li>
+                                <span class="info_icon">
+                                    <img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square">
+                                </span>
+                                <span class="info_text"><?= $this->lang->line('same_day_service'); ?></span>
+                            </li>
+                            <li>
+                                <span class="info_icon">
+                                    <img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square">
+                                </span>
+                                <span class="info_text"><?= $this->lang->line('quick_appointment'); ?></span>
+                            </li>
+                            <li>
+                                <span class="info_icon">
+                                    <img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square">
+                                </span>
+                                <span class="info_text"><?= $this->lang->line('convenient_location'); ?></span>
+                            </li>
+                            <li>
+                                <span class="info_icon">
+                                    <img src="<?= base_url("public/user/assets/images/icons/icon_square.svg"); ?>" alt="ProMotors - Icon Square">
+                                </span>
+                                <span class="info_text"><?= $this->lang->line('complimentary_shuttle'); ?></span>
+                            </li>
                         </ul>
-                    </div><a class="btn btn-primary" href="<?= base_url('car-cleaning'); ?>"><span class="btn_text">Get Service</span></a>
+                    </div>
+                    <a class="btn btn-primary" href="<?= base_url('car-cleaning'); ?>">
+                        <span class="btn_text"><?= $this->lang->line('get_service'); ?></span>
+                    </a>
                 </div>
             </div>
             <div class="service_split_item">
@@ -146,20 +206,19 @@
                 <div class="item_content">
                     <div class="section_heading">
                         <div class="outline_text">Service</div>
-                        <h3 class="heading_text wow" data-splitting>Rubbing, Waxing, and Polishing</h3>
-                        <p class="heading_description mb-0">Vehicle services include rubbing for imperfections,
-                            waxing for protection, and polishing for an enhanced appearance. Our team ensures
-                            top-notch maintenance for a protected and appealing vehicle.</p>
-                    </div><a class="btn btn-primary" href="<?= base_url('exterior-revitalization'); ?>"><span class="btn_text">Get Service</span></a>
+                        <h3 class="heading_text wow" data-splitting><?= $this->lang->line('rubbing_waxing_polishing'); ?></h3>
+                        <p class="heading_description mb-0"><?= $this->lang->line('vehicle_services_description'); ?></p>
+                    </div>
+                    <a class="btn btn-primary" href="<?= base_url('exterior-revitalization'); ?>">
+                        <span class="btn_text"><?= $this->lang->line('get_service'); ?></span></a>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="brand_logo_section section_space_lg pb-0 text-center">
         <div class="container">
             <div class="section_heading">
-                <h2 class="heading_text mb-0 wow" data-splitting>Best Multi Brand Car Repair Service</h2>
+                <h2 class="heading_text mb-0 wow" data-splitting><?= $this->lang->line('best_multi_brand_car_repair_service'); ?></h2>
             </div>
         </div>
         <div class="brand_logo_carousel brand_logo_blur_effect row align-items-center" data-slick='{"dots":false, "arrows": false}'>

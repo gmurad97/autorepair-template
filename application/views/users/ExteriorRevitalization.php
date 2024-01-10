@@ -4,11 +4,17 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="<?= base_url('home'); ?>">Home</a></li>
-                <li><a href="<?= base_url('services'); ?>">Services</a></li>
-                <li><a href="<?= base_url('exterior-revitalization'); ?>">Exterior Revitalization</a></li>
+                <li>
+                    <a href="<?= base_url('home'); ?>"><?= $this->lang->line("breadcrumb_home"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('services'); ?>"><?= $this->lang->line("breadcrumb_services"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('exterior-revitalization'); ?>"><?= $this->lang->line("breadcrumb_exterior_revitalization"); ?></a>
+                </li>
             </ul>
-            <h1 class="page_title wow" data-splitting>Exterior Revitalization</h1>
+            <h1 class="page_title wow" data-splitting><?= $this->lang->line("breadcrumb_exterior_revitalization"); ?></h1>
         </div>
     </section>
     <section class="details_section section_space_lg pb-0">
@@ -17,54 +23,32 @@
                 <div style="height: 250px; overflow: hidden; background: url('<?= base_url("public/user/assets/images/image8.jpg"); ?>') center center / cover no-repeat;" class="details_image"></div>
                 <div class="col-lg-8">
                     <div class="details_content">
-                        <h2 class="details_item_title wow" data-splitting>Your Rubbing, Waxing, and Polishing
-                            Specialists</h2>
-                        <p>At <strong>The Motorclub</strong>, we understand that a meticulous approach to
-                            rubbing, waxing, and polishing is essential to bring out the true beauty of your
-                            vehicle's exterior. Our dedicated team of detailing specialists provides
-                            comprehensive services to ensure your car looks its absolute best.</p>
-                        <p><strong>Why choose The Motorclub for Rubbing, Waxing, and Polishing?</strong></p>
+                        <h2 class="details_item_title wow" data-splitting><?= $this->lang->line('motorclub_specialists_rubbing_waxing_polishing'); ?></h2>
+                        <p><?= $this->lang->line('motorclub_meticulous_approach_text'); ?></p>
+                        <p><strong><?= $this->lang->line('motorclub_why_choose_rubbing_waxing_polishing'); ?></strong></p>
                         <ul>
-                            <li><strong>Detailing Experts:</strong> Our team consists of skilled professionals
-                                with expertise in advanced rubbing, waxing, and polishing techniques.</li>
-                            <li><strong>Quality Products:</strong> We use premium rubbing compounds, waxes, and
-                                polishes to enhance and protect your car's finish.</li>
-                            <li><strong>Meticulous Work:</strong> Our detailing services include meticulous
-                                rubbing to remove imperfections, waxing for a protective layer, and polishing
-                                for a high-gloss shine.</li>
-                            <li><strong>Paint Restoration:</strong> Our techniques are designed to restore and
-                                rejuvenate your car's paint, bringing back its original luster.</li>
-                            <li><strong>Efficient Services:</strong> We prioritize quick and efficient rubbing,
-                                waxing, and polishing to deliver outstanding results without unnecessary delays.
-                            </li>
-                            <li><strong>Affordable Packages:</strong> Our rubbing, waxing, and polishing
-                                packages are competitively priced, offering exceptional value.</li>
+                            <li><?= $this->lang->line('motorclub_detailing_experts_text'); ?></li>
+                            <li><?= $this->lang->line('motorclub_quality_products_text'); ?></li>
+                            <li><?= $this->lang->line('meticulous_work_description'); ?></li>
+                            <li><?= $this->lang->line('paint_restoration'); ?></li>
+                            <li><?= $this->lang->line('efficient_services'); ?></li>
+                            <li><?= $this->lang->line('affordable_packages'); ?></li>
                         </ul>
-                        <p><strong>Services Included in Rubbing, Waxing, and Polishing:</strong></p>
+                        <p><strong><?= $this->lang->line('services_included'); ?></strong></p>
                         <ul>
-                            <li>Professional rubbing to remove scratches and imperfections</li>
-                            <li>High-quality waxing for paint protection</li>
-                            <li>Precision polishing for a mirror-like finish</li>
-                            <li>Attention to detail in hard-to-reach areas</li>
+                            <li><?= $this->lang->line('professional_rubbing'); ?></li>
+                            <li><?= $this->lang->line('high_quality_waxing'); ?></li>
+                            <li><?= $this->lang->line('precision_polishing'); ?></li>
+                            <li><?= $this->lang->line('attention_to_detail'); ?></li>
                         </ul>
-                        <p><strong>Schedule Your Rubbing, Waxing, and Polishing Today:</strong></p>
-                        <p>Elevate the appearance of your car to new heights. Schedule an appointment with
-                            <strong>The Motorclub</strong> for expert, reliable, and affordable rubbing, waxing,
-                            and polishing services.
-                        </p>
-                        <p>Trust <strong>The Motorclub</strong> for all your detailing needs. Your satisfaction
-                            is our priority.</p>
+                        <p><strong><?= $this->lang->line('schedule_today'); ?></strong></p>
+                        <p><?= $this->lang->line('elevate_appearance'); ?></p>
+                        <p><?= $this->lang->line('trust_the_motorclub'); ?></p>
                     </div>
-
-
-
-
-
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 <?php $this->load->view("users/includes/Footer"); ?>
 <?php $this->load->view("users/includes/FooterScripts"); ?>

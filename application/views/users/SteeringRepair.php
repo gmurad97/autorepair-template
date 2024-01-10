@@ -4,11 +4,17 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="<?= base_url("home"); ?>">Home</a></li>
-                <li><a href="<?= base_url("services"); ?>">Services</a></li>
-                <li><a href="<?= base_url("steering-repair"); ?>">Steering Repair</a></li>
+                <li>
+                    <a href="<?= base_url("home"); ?>"><?= $this->lang->line("breadcrumb_home"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url("services"); ?>"><?= $this->lang->line("breadcrumb_services"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url("steering-repair"); ?>"><?= $this->lang->line("breadcrumb_steering_repair"); ?></a>
+                </li>
             </ul>
-            <h1 class="page_title wow" data-splitting>Steering Repair</h1>
+            <h1 class="page_title wow" data-splitting><?= $this->lang->line("breadcrumb_steering_repair"); ?></h1>
         </div>
     </section>
     <section class="details_section section_space_lg pb-0">
@@ -17,49 +23,32 @@
                 <div style="height: 250px; overflow: hidden; background: url('<?= base_url("public/user/assets/images/image6.jpg"); ?>') center center / cover no-repeat;" class="details_image"></div>
                 <div class="col-lg-8">
                     <div class="details_content">
-                        <h2 class="details_item_title wow" data-splitting>Steering Repair at the Motorclub</h2>
-                        <p>At <strong>The Motorclub</strong>, we understand the importance of a responsive and
-                            well-functioning steering system for your driving experience. Our team of dedicated
-                            experts specializes in comprehensive steering repair services to ensure precise
-                            control and safety on the road.</p>
-                        <p><strong>Why choose The Motorclub for Steering Repair?</strong></p>
+                        <h2 class="details_item_title wow" data-splitting><?= $this->lang->line('steering_repair_at_motorclub'); ?></h2>
+                        <p><?= $this->lang->line('importance_of_responsive_steering_system'); ?></p>
+                        <p><strong><?= $this->lang->line('why_choose_motorclub_steering_repair'); ?></strong></p>
                         <ul>
-                            <li><strong>Expert Technicians:</strong> Our skilled technicians have extensive
-                                experience in diagnosing and repairing steering issues.</li>
-                            <li><strong>State-of-the-Art Diagnostics:</strong> We use advanced diagnostic tools
-                                to accurately identify steering system problems.</li>
-                            <li><strong>Quality Steering Services:</strong> From power steering repairs to
-                                alignment adjustments, we offer top-notch steering services.</li>
-                            <li><strong>Efficient Repairs:</strong> We prioritize quick and efficient steering
-                                repairs to ensure your vehicle's optimal performance.</li>
-                            <li><strong>Transparent Communication:</strong> Before any repairs, we provide clear
-                                explanations of identified issues and recommended solutions.</li>
-                            <li><strong>Affordable Pricing:</strong> Our steering repair services are
-                                competitively priced, providing excellent value for your investment.</li>
+                            <li><?= $this->lang->line('expert_technicians_steering_repair'); ?></li>
+                            <li><?= $this->lang->line('state_of_the_art_diagnostics_steering_repair'); ?></li>
+                            <li><?= $this->lang->line('quality_steering_services'); ?></li>
+                            <li><?= $this->lang->line('efficient_repairs_steering_system'); ?></li>
+                            <li><?= $this->lang->line('transparent_communication_steering_repair'); ?></li>
+                            <li><?= $this->lang->line('affordable_pricing_steering_repair'); ?></li>
                         </ul>
-                        <p><strong>Common Signs You May Need Steering Repair:</strong></p>
+                        <p><strong><?= $this->lang->line('common_signs_for_steering_repair'); ?></strong></p>
                         <ul>
-                            <li>Difficulty steering or a stiff steering wheel</li>
-                            <li>Strange noises when turning the wheel</li>
-                            <li>Vehicle pulling to one side</li>
-                            <li>Uneven tire wear</li>
+                            <li><?= $this->lang->line('difficulty_steering_stiff_steering_wheel'); ?></li>
+                            <li><?= $this->lang->line('strange_noises_turning_wheel'); ?></li>
+                            <li><?= $this->lang->line('vehicle_pulling_one_side'); ?></li>
+                            <li><?= $this->lang->line('uneven_tire_wear'); ?></li>
                         </ul>
-                        <p><strong>Schedule Your Steering Repair Today:</strong></p>
-                        <p>Your safety on the road relies on a well-functioning steering system. Schedule an
-                            appointment with <strong>The Motorclub</strong> for expert, reliable, and affordable
-                            steering repair services.</p>
-                        <p>Trust <strong>The Motorclub</strong> for all your steering repair needs. Your journey
-                            is our priority.</p>
+                        <p><strong><?= $this->lang->line('schedule_steering_repair_today'); ?></strong></p>
+                        <p><?= $this->lang->line('safety_relies_on_well_functioning_steering_system'); ?></p>
+                        <p><?= $this->lang->line('trust_the_motorclub_steering_repair'); ?></p>
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 <?php $this->load->view("users/includes/Footer"); ?>
 <?php $this->load->view("users/includes/FooterScripts"); ?>

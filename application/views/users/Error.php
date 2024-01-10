@@ -5,8 +5,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="title_text wow" data-splitting>Page Not Found</h1>
-                    <p class="ps-lg-5 pe-lg-5">The page you are looking for might have been removed, had its name changed or is temporarily unavailable</p><a class="btn btn-primary" href="<?= base_url('home'); ?>"><span class="btn_text">Back to Home Page</span></a>
+                    <h1 class="title_text wow" data-splitting><?= $this->lang->line('motorclub_page_not_found'); ?></h1>
+                    <p class="ps-lg-5 pe-lg-5"><?= $this->lang->line('motorclub_page_not_found_message'); ?></p>
+                    <a class="btn btn-primary" href="<?= base_url('home'); ?>">
+                        <span class="btn_text"><?= $this->lang->line('motorclub_back_to_home_page'); ?></span>
+                    </a>
                 </div>
             </div>
         </div>

@@ -4,11 +4,17 @@
     <section class="page_banner" style="background-image: url('<?= base_url("public/user/assets/images/shapes/tyre_print_3.svg"); ?>');">
         <div class="container">
             <ul class="breadcrumb_nav unordered_list">
-                <li><a href="<?= base_url('home'); ?>">Home</a></li>
-                <li><a href="<?= base_url('services'); ?>">Services</a></li>
-                <li><a href="<?= base_url('engine-repair'); ?>">Engine Repair</a></li>
+                <li>
+                    <a href="<?= base_url('home'); ?>"><?= $this->lang->line("breadcrumb_home"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('services'); ?>"><?= $this->lang->line("breadcrumb_services"); ?></a>
+                </li>
+                <li>
+                    <a href="<?= base_url('engine-repair'); ?>"><?= $this->lang->line("breadcrumb_engine_repair"); ?></a>
+                </li>
             </ul>
-            <h1 class="page_title wow" data-splitting>Engine Repair</h1>
+            <h1 class="page_title wow" data-splitting><?= $this->lang->line("breadcrumb_engine_repair"); ?></h1>
         </div>
     </section>
     <section class="details_section section_space_lg pb-0">
@@ -17,47 +23,39 @@
                 <div style="height: 250px; overflow: hidden; background: url('<?= base_url("public/user/assets/images/image2.avif"); ?>') center center / cover no-repeat;" class="details_image"></div>
                 <div class="col-lg-8">
                     <div class="details_content">
-                        <h2 class="details_item_title wow" data-splitting>Engine Repair at The Motorclub</h2>
-                        <p>At <strong>The Motorclub</strong>, we understand the heart of your vehicle is its
-                            engine. Our team of skilled technicians specializes in comprehensive engine repair
-                            services to ensure optimal performance and reliability.</p>
-                        <p>Why choose <strong>The Motorclub</strong> for Engine Repair?</p>
+                        <h2 class="details_item_title wow" data-splitting><?= $this->lang->line('engine_repair_at_motorclub'); ?></h2>
+                        <p><?= $this->lang->line('heart_of_vehicle_is_engine'); ?></p>
+                        <p><?= $this->lang->line('why_choose_motorclub_engine_repair'); ?></p>
                         <ul>
-                            <li><strong>Expert Technicians:</strong> Our team consists of highly skilled
-                                technicians with extensive knowledge of engine systems.</li>
-                            <li><strong>Diagnostic Expertise:</strong> We use advanced diagnostic tools to
-                                identify engine issues accurately.</li>
-                            <li><strong>Quality Parts:</strong> We believe in using only high-quality parts for
-                                engine repairs, ensuring longevity and performance.</li>
-                            <li><strong>Efficient Repairs:</strong> We strive for quick and efficient engine
-                                repairs to minimize downtime.</li>
-                            <li><strong>Transparent Communication:</strong> Before any repairs, we provide clear
-                                explanations of identified issues and recommended solutions.</li>
-                            <li><strong>Affordable Pricing:</strong> Our engine repair services are
-                                competitively priced, offering value for your investment.</li>
+                            <li><?= $this->lang->line('expert_technicians_engine_repair'); ?></li>
+                            <li><?= $this->lang->line('diagnostic_expertise_engine_repair'); ?></li>
+                            <li><?= $this->lang->line('quality_parts_engine_repair'); ?></li>
+                            <li><?= $this->lang->line('efficient_repairs_engine_repair'); ?></li>
+                            <li><?= $this->lang->line('transparent_communication_engine_repair'); ?></li>
+                            <li><?= $this->lang->line('affordable_pricing_engine_repair'); ?></li>
                         </ul>
-                        <p><strong>Common Signs You May Need Engine Repair:</strong></p>
+                        <p><strong><?= $this->lang->line('common_signs_engine_repair'); ?></strong></p>
                         <ul>
-                            <li>Strange noises from the engine</li>
-                            <li>Poor fuel efficiency</li>
-                            <li>Warning lights on the dashboard</li>
-                            <li>Engine overheating</li>
-                            <li>Loss of power or acceleration</li>
+                            <li><?= $this->lang->line('strange_noises_from_engine'); ?></li>
+                            <li><?= $this->lang->line('poor_fuel_efficiency'); ?></li>
+                            <li><?= $this->lang->line('warning_lights_on_dashboard'); ?></li>
+                            <li><?= $this->lang->line('engine_overheating'); ?></li>
+                            <li><?= $this->lang->line('loss_of_power_or_acceleration'); ?></li>
                         </ul>
-                        <p><strong>Schedule Your Engine Repair Today:</strong></p>
-                        <p>Your vehicle's engine is crucial for a smooth ride. Schedule an appointment with
-                            <strong>The Motorclub</strong> for expert, reliable, and affordable engine repair
-                            services.
-                        </p>
+                        <p><strong><?= $this->lang->line('schedule_engine_repair_today'); ?></strong></p>
+                        <p><?= $this->lang->line('engine_importance_statement'); ?></p>
+
+
                         <p>Trust <strong>The Motorclub</strong> for all your engine repair needs. Your journey
                             is our priority.</p>
-                    </div>
 
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 <?php $this->load->view("users/includes/Footer"); ?>
 <?php $this->load->view("users/includes/FooterScripts"); ?>

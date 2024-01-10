@@ -24,3 +24,19 @@
 <body>
     <div class="page_wrapper">
         <div class="backtotop"><a href="#" class="scroll"><i class="fa-solid fa-arrow-up"></i></a></div>
+        <script src="<?= base_url('public/user/assets/js/snowflakes.min.js'); ?>"></script>
+        <script>
+            new Snowflakes({
+                color: "rgb(64, 115, 158)",
+                count: 64,
+                minOpacity: 0.32,
+                maxOpacity: 0.80,
+                minSize: 16,
+                maxSize: 32,
+                rotation: true,
+                speed: 1,
+                wind: true,
+                zIndex: 9999,
+                autoResize: true
+            });
+        </script>
