@@ -96,19 +96,19 @@
                     <nav class="main_menu navbar navbar-expand-lg">
                         <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
                             <ul class="main_menu_list unordered_list_center">
-                                <li class="active">
+                                <li class="<?= $this->uri->segment(1) == 'home' ? 'active' : ''; ?>">
                                     <a href="<?= base_url('home'); ?>"><?= $this->lang->line("navbar_home"); ?></a>
                                 </li>
-                                <li>
+                                <li class="<?= $this->uri->segment(1) == 'about' ? 'active' : ''; ?>">
                                     <a href="<?= base_url('about'); ?>"><?= $this->lang->line("navbar_about"); ?></a>
                                 </li>
-                                <li>
+                                <li class="<?= $this->uri->segment(1) == 'services' || $this->uri->segment(1) == 'brake-repair' || $this->uri->segment(1) == 'engine-repair' || $this->uri->segment(1) == 'tire-repair' || $this->uri->segment(1) == 'cooling-system' || $this->uri->segment(1) == 'battery-repair' || $this->uri->segment(1) == 'steering-repair' ? 'active' : '' ?>">
                                     <a href="<?= base_url('services'); ?>"><?= $this->lang->line("navbar_services"); ?></a>
                                 </li>
-                                <li>
+                                <li class="<?= $this->uri->segment(1) == 'faq' ? 'active' : ''; ?>">
                                     <a href="<?= base_url('faq'); ?>"><?= $this->lang->line("navbar_faq"); ?></a>
                                 </li>
-                                <li>
+                                <li class="<?= $this->uri->segment(1) == 'contact' ? 'active' : ''; ?>">
                                     <a href="<?= base_url('contact'); ?>"><?= $this->lang->line("navbar_contact"); ?></a>
                                 </li>
                             </ul>

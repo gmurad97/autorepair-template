@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="outline_text" data-parallax='{"x" : -200, "smoothness": 8}'><?= $this->lang->line("motoclub"); ?></div>
+        <div class="outline_text" data-parallax='{"x" : -200, "smoothness": 8}'><?= $this->lang->line("motorclub"); ?></div>
     </section>
     <div class="counter_section bg_gray_dark section_space_md">
         <div class="container">
