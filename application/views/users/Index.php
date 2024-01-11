@@ -213,7 +213,7 @@
                             </svg>
                         </div>
                         <div class="item_content">
-                            <h3 class="item_title"><?= $this->lang->line("steering_repair_title"); ?>Steering Repair</h3>
+                            <h3 class="item_title"><?= $this->lang->line("steering_repair_title"); ?></h3>
                             <p><?= $this->lang->line("steering_repair_description"); ?></p>
                             <a class="btn-link" href="<?= base_url('steering-repair'); ?>">
                                 <span class="btn_icon">

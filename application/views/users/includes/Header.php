@@ -4,13 +4,78 @@
     <div class="header_topbar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-12 p-0 d-flex flex-row justify-content-end align-items-center">
+                <div class="col-lg-6 col-6">
+                    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .topbar-icon {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+
+                        .topbar-social:not(:last-of-type) {
+                            margin-right: 22px;
+                        }
+
+                        .topbar-social {
+                            width: 32px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                        }
+
+                        .topbar-social a {
+                            font-size: 16px;
+                            font-weight: lighter !important;
+                            color: #D16527;
+                        }
+
+                        .topbar-social a:hover {
+                            color: #fff;
+                            text-shadow: 2px 2px 16px #D16527;
+                        }
+
+                        .topbar-instagram {
+                            background-color: #161616;
+                        }
+
+                        .topbar-youtube {
+                            background-color: #161616;
+                        }
+
+                        .topbar-whatsapp {
+                            background-color: #161616;
+
+                        }
+                    </style>
+                    <div class="topbar-icon">
+                        <div class="topbar-social topbar-instagram">
+                            <a target="_blank" href="https://www.instagram.com/themotorclub2022">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="topbar-social topbar-youtube">
+                            <a target="_blank" href="https://www.youtube.com/@themotorclub5635">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </div>
+                        <div class="topbar-social topbar-whatsapp">
+                            <a target="_blank" href="https://wa.me/+19056450577">
+                                <i class="fa fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6 p-0 d-flex flex-row justify-content-end align-items-center">
                     <select id="select2-with-flags" onchange="window.location.href='<?= base_url("switch-lang/"); ?>'+this.value;">
-                        <option value="en" <?= $this->session->userdata("site_lang") == "en" ? "selected":""; ?> data-icon="<?= base_url('public/user/assets/ml/en.svg'); ?>">ENG</option>
-                        <option value="fr" <?= $this->session->userdata("site_lang") == "fr" ? "selected":""; ?> data-icon="<?= base_url('public/user/assets/ml/fr.svg'); ?>">FRA</option>
-                        <option value="ru" <?= $this->session->userdata("site_lang") == "ru" ? "selected":""; ?> data-icon="<?= base_url('public/user/assets/ml/ru.svg'); ?>">RUS</option>
-                        <option value="tr" <?= $this->session->userdata("site_lang") == "tr" ? "selected":""; ?> data-icon="<?= base_url('public/user/assets/ml/tr.svg'); ?>">TUR</option>
-                        <option value="ar" <?= $this->session->userdata("site_lang") == "ar" ? "selected":""; ?> data-icon="<?= base_url('public/user/assets/ml/ar.svg'); ?>">ARA</option>
+                        <option value="en" <?= $this->session->userdata("site_lang") == "en" ? "selected" : ""; ?> data-icon="<?= base_url('public/user/assets/ml/en.svg'); ?>">ENG</option>
+                        <option value="fr" <?= $this->session->userdata("site_lang") == "fr" ? "selected" : ""; ?> data-icon="<?= base_url('public/user/assets/ml/fr.svg'); ?>">FRA</option>
+                        <option value="ru" <?= $this->session->userdata("site_lang") == "ru" ? "selected" : ""; ?> data-icon="<?= base_url('public/user/assets/ml/ru.svg'); ?>">RUS</option>
+                        <option value="tr" <?= $this->session->userdata("site_lang") == "tr" ? "selected" : ""; ?> data-icon="<?= base_url('public/user/assets/ml/tr.svg'); ?>">TUR</option>
+                        <option value="ar" <?= $this->session->userdata("site_lang") == "ar" ? "selected" : ""; ?> data-icon="<?= base_url('public/user/assets/ml/ar.svg'); ?>">ARA</option>
                     </select>
                 </div>
             </div>

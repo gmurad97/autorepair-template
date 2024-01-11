@@ -10,19 +10,16 @@
                                 <img width="220px" class="light_theme_logo" src="<?= base_url('public/user/assets/images/logo2.jpg'); ?>" alt="Logo2">
                             </a>
                         </div>
-                        <p>
-                            We are always prepared to provide you with the highest level of service and
-                            assistance to meet your needs.
-                        </p>
+                        <p><?= $this->lang->line("footer_about_text"); ?></p>
                         <div class="footer_hotline">
-                            <span>Support center 24/7</span>
+                            <span><?= $this->lang->line("footer_support_center_text"); ?></span>
                             <a class="hotline_number" href="tel:+1 (905) 645-0577">+1 (905) 645-0577</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="info_list_wrap">
-                        <h3 class="list_title">Popular Services</h3>
+                        <h3 class="list_title"><?= $this->lang->line("footer_popular_services_text"); ?></h3>
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <ul class="info_list unordered_list_block text-uppercase">
@@ -31,7 +28,7 @@
                                             <span class="info_icon">
                                                 <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                             </span>
-                                            <span class="info_text">Home</span>
+                                            <span class="info_text"><?= $this->lang->line("navbar_home"); ?></span>
                                         </a>
                                     </li>
                                     <li>
@@ -39,7 +36,7 @@
                                             <span class="info_icon">
                                                 <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                             </span>
-                                            <span class="info_text">About</span>
+                                            <span class="info_text"><?= $this->lang->line("navbar_about"); ?></span>
                                         </a>
                                     </li>
                                     <li>
@@ -47,7 +44,7 @@
                                             <span class="info_icon">
                                                 <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                             </span>
-                                            <span class="info_text">Services</span>
+                                            <span class="info_text"><?= $this->lang->line("navbar_services"); ?></span>
                                         </a>
                                     </li>
                                     <li>
@@ -55,7 +52,7 @@
                                             <span class="info_icon">
                                                 <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                             </span>
-                                            <span class="info_text">F.A.Q.</span>
+                                            <span class="info_text"><?= $this->lang->line("navbar_faq"); ?></span>
                                         </a>
                                     </li>
                                     <li>
@@ -63,7 +60,7 @@
                                             <span class="info_icon">
                                                 <img src="<?= base_url('public/user/assets/images/icons/icon_square.svg'); ?>" alt="ProMotors - Icon Square">
                                             </span>
-                                            <span class="info_text">Contact</span>
+                                            <span class="info_text"><?= $this->lang->line("navbar_contact"); ?></span>
                                         </a>
                                     </li>
                                 </ul>
@@ -73,13 +70,13 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer_subscribe_form">
-                        <h3 class="list_title">Subscribe</h3>
+                        <h3 class="list_title"><?= $this->lang->line("footer_subscriber_text"); ?></h3>
                         <div class="form-group">
-                            <label for="input_email">Your Email</label>
-                            <input type="tel" name="phone" class="form-control" id="input_email" placeholder="Enter Your Email Address">
+                            <label for="input_email"><?= $this->lang->line("footer_your_email_text"); ?></label>
+                            <input type="tel" name="phone" class="form-control" id="input_email" placeholder="<?= $this->lang->line('footer_enter_your_email_address_text'); ?>">
                         </div>
                         <button type="submit" class="btn btn-primary">
-                            <span class="btn_text">Subscribe</span>
+                            <span class="btn_text"><?= $this->lang->line("footer_subscriber_text"); ?></span>
                         </button>
                     </div>
                 </div>

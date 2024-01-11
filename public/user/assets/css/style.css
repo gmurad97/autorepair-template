@@ -6188,7 +6188,8 @@ Responsive For Mobile & Tablet Devices
 ================================================== */
 @media screen and (max-width: 767px) {
   .header_btns_group > li:last-child {
-    display: none;
+    display: inline-block;
+    margin-top: 16px !important;
   }
   .details_section .details_content p {
     font-size: 16px;
@@ -6503,6 +6504,7 @@ Responsive For Mobile & Tablet Devices
     display: block;
   }
   .site_header .site_logo .site_link img {
+    margin-top: -50px;
     width: 100%;
   }
   .header_btns_group > li > button {
